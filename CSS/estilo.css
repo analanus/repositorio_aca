@@ -1,0 +1,727 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333333;
+    font-family: "Chivo", sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+.tituloSeccion {
+    color: #333333;
+    padding: 20px 0 10px;
+    font-family: "Chivo", sans-serif;
+    font-size: 2.5em;
+}
+
+.descripcionSeccion {
+    padding: 20px 0 40px;
+}
+
+
+/*comienzo del header*/
+
+header {
+    background-color: #94D0CC;
+}
+
+.logoInicio {
+    width: 80px;
+}
+
+.contenedorRedes {
+    display: none;
+}
+
+.redesSociales {
+    width: 25px;
+}
+
+nav {
+    font-weight: 400;
+    font-size: 1em;
+    overflow-x: hidden;
+    font-family: "Chivo", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: flex;
+    padding: 15px 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    border-bottom: 5px solid #333333;
+    transition: all .3s;
+}
+
+
+/*estilos de la homepage*/
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoDesktop {
+    display: none;
+}
+
+.contenedorSection1 {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    max-width: 1600px;
+    border-radius: 16px;
+    background-color: #F29191;
+}
+
+.textoBienvenida {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+}
+
+.textoBienvenida h1 {
+    padding-bottom: 20px;
+    font-size: 3em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.textoBienvenida p {
+    line-height: 1.5em;
+    width: 85%;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+.separador1 {
+    background-color: #FFF;
+    height: 8px;
+    width: 55px;
+    border-radius: 5px;
+}
+
+.separador2 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.contenedorSection2 {
+    background-color: #94D0CC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.contenedorSection2 h2 {
+    width: 100%;
+    max-width: 1600px;
+    padding-bottom: 10px;
+}
+
+.articulos {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.articulos article {
+    padding: 15px 0;
+}
+
+.contenedorArticulo {
+    background-color: #ffffff;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    padding-top: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.textoNota p {
+    width: 100%;
+    padding-top: 15px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.imagenCard {
+    width: 100%;
+    height: 170px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.textoNota h3 {
+    padding-bottom: 15px;
+}
+
+.textoNota {
+    padding: 0 15px;
+    width: 100%;
+}
+
+
+/*estilos para page la asociacion*/
+
+.tituloSeccion {
+    max-width: 1600px;
+    width: 100%;
+}
+
+.contenedorHistoria {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.articuloHistoria {
+    max-width: 1600px;
+    width: 100%;
+    background-color: #F29191;
+    border-radius: 16px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.articuloHistoria p,
+.articuloHistoria h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.imagenesArticulos {
+    width: 200px;
+}
+
+.contenedorComision {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+}
+
+.comision {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 35px 0;
+}
+
+.cargo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comisionDirectiva {
+    width: 150px;
+}
+
+.comisionNombre {
+    font-weight: 500;
+    padding: 10px 0 5px;
+}
+
+.comisionCargo {
+    color: rgb(170, 167, 167);
+}
+
+.aclaracion {
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+
+/*estilos para la page contacto*/
+
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    margin: 5px 0;
+}
+
+
+/*estilos para la page suscribite*/
+
+.contenedorPadre {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 30px;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.parte1 {
+    grid-column: 1 / 6;
+}
+
+.parte2 {
+    grid-row-start: 2;
+    grid-column: 1 / 5;
+}
+
+.servicio1 {
+    grid-row-start: 3;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio2 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio3 {
+    grid-row-start: 3;
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio4 {
+    grid-row-start: 3;
+    grid-column: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio5 {
+    grid-row-start: 3;
+    grid-column: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/*transformaciones desafio*/
+
+.servicio1:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.servicio2:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.servicio3:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.servicio4:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.servicio5:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.imagenServicios {
+    width: 50px;
+}
+
+.nombreServicio {
+    font-weight: 500;
+    padding: 10px 0 5px;
+    color: #1e4b55;
+}
+
+.parte3 {
+    grid-row-start: 4;
+    grid-column: 1 / 5;
+}
+
+.parte4 {
+    grid-row-start: 5;
+    grid-column: 1 / 5;
+}
+
+
+/*estilos para talleres*/
+
+.fondoTalleres {
+    padding: 20px 0;
+    background-color: #F29191;
+}
+
+.imagenTalleres {
+    width: 200px;
+}
+
+.tituloTalleres {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.contenedorTalleres {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.taller {
+    display: flex;
+    padding: 0 0 20px;
+}
+
+.textoTalleres {
+    padding-left: 20px;
+}
+
+
+/*estilos para Dieta sin tacc*/
+
+.dietaSintacc {
+    width: 100%;
+    max-width: 1600px;
+    background-color: #94D0CC;
+    border-radius: 16px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.dietaSintacc h2 {
+    padding-bottom: 20px;
+}
+
+.logoAnmat {
+    width: 250px;
+    padding: 10px 0;
+}
+
+
+/*estilo del footer*/
+
+footer {
+    height: 150px;
+    background-color: #D1D9D9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redesFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+.redesFooter a {
+    padding-left: 5px;
+}
+
+.contenedorFooter {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorFooter div {
+    padding: 5px;
+}
+
+
+/*tablets responsive*/
+
+@media only screen and (min-width: 768px) {
+    .contenedorRedes {
+        display: none;
+    }
+    .textoBienvenida {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        justify-content: center;
+    }
+    .textoBienvenida h1 {
+        display: flex;
+        padding-bottom: 20px;
+        font-family: "Chivo", sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    .textoBienvenida p {
+        display: flex;
+        line-height: 1.5em;
+        width: 85%;
+        color: #ffffff;
+        padding-top: 20px;
+    }
+    .articulos article {
+        display: flex;
+        flex-direction: row;
+    }
+    article h3 {
+        padding-top: 0;
+    }
+    .textoNota {
+        padding: 10px 20px;
+        width: 60%;
+    }
+    .articulos {
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenCard {
+        width: 40%;
+        height: 100%;
+    }
+    .contenedorArticulo {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/*Desktop responsive*/
+
+@media only screen and (min-width: 992px) {
+    header {
+        height: 80px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .contenedorHeader {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navegacion {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+    .contenedorRedes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 60px;
+    }
+    .contenedorRedes a {
+        padding-left: 5px;
+    }
+    nav {
+        display: flex;
+        align-content: center;
+        font-family: "Chivo", sans-serif;
+        font-size: 1.1em;
+        overflow: visible;
+        font-weight: 500;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-content: center;
+        height: 60px;
+    }
+    .menu li {
+        position: relative;
+        display: inline-block;
+        line-height: 60px;
+    }
+    .menu li a {
+        display: block;
+        padding: 0 20px;
+        color: #333333;
+        text-decoration: none;
+    }
+    .menu li a:hover {
+        border-bottom: 5px solid #333333;
+        transition: all .3s;
+    }
+    .videoDesktop {
+        display: none;
+    }
+    .videoWrapper,
+    .videoWrapper iframe {
+        display: block;
+    }
+    .contenedorSection1 {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+        background-color: #F29191;
+    }
+    .textoBienvenida {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        justify-content: center;
+    }
+    .textoBienvenida h1 {
+        display: flex;
+        padding-bottom: 20px;
+        font-family: "Chivo", sans-serif;
+        font-size: 3em;
+        font-weight: 700;
+        color: #ffffff;
+    }
+    .textoBienvenida p {
+        display: flex;
+        line-height: 1.5em;
+        width: 85%;
+        color: #ffffff;
+        padding-top: 20px;
+    }
+    .contenedorHistoria {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .articuloHistoria {
+        max-width: 1600px;
+        width: 100%;
+        background-color: #F29191;
+        border-radius: 16px;
+        padding: 20px;
+        width: 48%;
+    }
+    .contenedorArticulo {
+        display: flex;
+        flex-direction: column;
+    }
+    .articulos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .articulos article {
+        display: flex;
+        flex-direction: column;
+    }
+    .textoNota p {
+        width: 350px;
+        padding-top: 15px;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .imagenCard {
+        width: 100%;
+        height: 250px;
+    }
+    .textoNota {
+        padding: 10px 15px;
+        width: 100%;
+    }
+    footer {
+        height: 70px;
+        background-color: #D1D9D9;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contenedorFooter {
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .videoDesktop {
+        display: block;
+    }
+    .videoDesktop iframe {
+        border-radius: 20px;
+    }
+    .videoWrapper,
+    .videoWrapper iframe {
+        display: none;
+    }
+    .contenedorSection1 {
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0;
+        background-color: #F29191;
+    }
+}
