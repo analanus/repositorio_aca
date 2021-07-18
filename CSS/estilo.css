@@ -284,43 +284,6 @@ nav ul {
 }
 
 
-/*estilos para la page contacto*/
-
-.contenedorFormulario,
-.contenedorMapa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.mapa {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    margin: 5px 0;
-}
-
-.formulario {
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-}
-
-.formulario input,
-.formulario select,
-.formulario textarea {
-    margin: 5px 0;
-}
-
-.contenedorMailyredes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-
 /*estilos para la page suscribite*/
 
 .contenedorPadre {
@@ -489,10 +452,44 @@ nav ul {
 /*estilo del footer*/
 
 footer {
-    height: 150px;
+    height: 1100px;
     background-color: #D1D9D9;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.contenedorFormulario,
+.contenedorMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 5px 0;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    margin: 5px 0;
+}
+
+.contenedorMailyredes {
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -724,6 +721,35 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+    .contenedorFormulario,
+    .contenedorMapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapa {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        margin: 5px 0;
+    }
+    .formulario {
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .formulario input,
+    .formulario select,
+    .formulario textarea {
+        margin: 5px 0;
+    }
+    .contenedorMailyredes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
 
