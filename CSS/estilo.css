@@ -286,6 +286,20 @@ nav ul {
 
 /*estilos para la page contacto*/
 
+.contenedorFormulario,
+.contenedorMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    margin: 5px 0;
+}
+
 .formulario {
     width: 100%;
     max-width: 500px;
@@ -298,6 +312,12 @@ nav ul {
 .formulario select,
 .formulario textarea {
     margin: 5px 0;
+}
+
+.contenedorMailyredes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 
@@ -690,7 +710,7 @@ footer {
         width: 100%;
     }
     footer {
-        height: 70px;
+        height: 500px;
         background-color: #D1D9D9;
         display: flex;
         flex-direction: row;

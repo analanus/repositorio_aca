@@ -56,7 +56,8 @@
 
         <div class="tituloTalleres">
             <h1 class="tituloSeccion">Talleres y capacitaciones</h1>
-            <p class="descripcionSeccion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, distinctio. Unde deleniti facilis cumque! Ducimus sunt illo quam, architecto ab quas eum tempore. Delectus, voluptatem.</p>
+            <p class="descripcionSeccion">En esta sección encontrarás todos los talleres y capacitaciones que realizamos mes a mes. En su mayoría son gratuitos y no requieren de inscripción previa. <br> ¡No te olvides de seguirnos en nuestras redes sociales para seguir enterándote
+                de todas nuestras novedades!</p>
         </div>
 
         <section class="fondoTalleres">
@@ -67,7 +68,7 @@
                         <div class="textoNota ">
                             <h3>Vida sin gluten</h3>
                             <div class="separador2 "></div>
-                            <p>Lorem ipsum dolor sit amet. Dolores laboriosam nemo, libero fugiat natus itaque? Totam, enim? Quod iure cumque, natus sint consequatur nam rerum?</p>
+                            <p>Destinado especialmente a aquellas personas que han recibido su diagnóstico recientemente y a su familia.⁣ <br>Actividad gratuita y sin inscripción previa.⁣⁣</p>
                         </div>
                     </div>
                 </article>
@@ -153,15 +154,53 @@
 
     <footer>
         <div class="contenedorFooter">
-            <div>
-                <p>Copyright © 2021 Asociación Celíaca Argentina</p>
+
+            <div class="contenedorFormulario">
+                <h2>¿Cómo podemos ayudarte?</h2>
+
+                <form class="formulario" action="">
+
+                    <input placeholder="Nombre y Apellido" name="name" id="name" type="text" required>
+
+
+                    <input placeholder="Correo Electrónico" name="email" id="email" type="email" required>
+
+                    <input placeholder="Teléfono" name="telefono" id="telefono" type="text" required>
+
+                    <select name="relacion_con_la_celiaquia">
+                            <option hidden selected>Relación con la celiaquía</option>
+                            <option value="celiacx">Celíacx</option>
+                            <option value="familiar/amigo_de_celiaco">Familiar/Amigx de celíacx</option>
+                            <option value="sensible_al_gluten">Sensible al gluten</option>
+                            <option value="profesional_de_la_salud">Profesional de la salud</option>
+                            <option value="medio_de_prensa">Medio de prensa</option>
+                            <option value="otro">Otro</option>
+                        </select>
+
+                    <textarea placeholder="Tu consulta" name="consulta" id="consulta" cols="30" rows="10"></textarea>
+
+                    <div>
+                        <input type="reset" value="Limpiar formulario">
+                        <input type="submit" value="Enviar consulta">
+                    </div>
+                </form>
+                <div>
+                    <p>Copyright © 2021 Asociación Celíaca Argentina</p>
+                </div>
             </div>
-            <div>
-                <a href="mailto:info@celiaco.org.ar ">info@celiaco.org.ar</a>
-            </div>
-            <div class="redesFooter">
-                <a href="https://www.facebook.com/Asociacion.Celiaca " target="_blank "><img src="../multimedia/facebook.png " class="redesSociales" alt="Logo de facebook"></a>
-                <a href="https://www.instagram.com/asociacion.celiaca.arg " target="_blank "><img src="../multimedia/instagram.png " class="redesSociales" alt="Logo de instagram"></a>
+
+            <div class="contenedorMapa">
+                <h2>Sede Central</h2>
+                <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13081.647383131689!2d-57.946379!3d-34.9462849!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7e22c196be8c02f!2sAsociaci%C3%B3n%20Cel%C3%ADaca%20Argentina!5e0!3m2!1ses!2sar!4v1623003184157!5m2!1ses!2sar"
+                    width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div class="contenedorMailyredes">
+                    <a href="mailto:info@celiaco.org.ar ">info@celiaco.org.ar</a>
+                    <div class="redesFooter">
+                        <a href="https://www.facebook.com/Asociacion.Celiaca " target="_blank "><img src="../multimedia/facebook.png " class="redesSociales" alt="Logo de facebook"></a>
+                        <a href="https://www.instagram.com/asociacion.celiaca.arg " target="_blank "><img src="../multimedia/instagram.png " class="redesSociales" alt="Logo de instagram"></a>
+
+                    </div>
+                </div>
 
             </div>
         </div>
