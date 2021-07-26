@@ -1,0 +1,52 @@
+@mixin max-width {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.contenedorHistoria {
+    @include max-width;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .articuloHistoria {
+        width: 100%;
+        background-color: $bg-secundario;
+        border-radius: 16px;
+        padding: 20px;
+        p,
+        h2 {
+            padding: 5px 10px;
+        }
+    }
+}
+
+.contenedorComision {
+    @include max-width;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 0;
+}
+
+.comision {
+    @include max-width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 35px 0;
+    .cargo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .comisionDirectiva {
+            width: 150px;
+        }
+        .comisionNombre {
+            font-weight: 500;
+            padding: 10px 0 5px;
+        }
+        .comisionCargo {
+            color: rgb(170, 167, 167);
+        }
+    }
+}

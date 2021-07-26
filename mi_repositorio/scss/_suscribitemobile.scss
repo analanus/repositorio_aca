@@ -1,0 +1,16 @@
+@mixin max-width {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.contenedorSlide {
+    width: 100%;
+    max-width: 700px;
+}
+
+.contenedorSuscribite {
+    display: flex;
+    justify-content: row;
+    @include max-width;
+    padding-top: 20px;
+}

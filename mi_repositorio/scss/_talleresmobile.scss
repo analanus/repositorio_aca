@@ -1,0 +1,11 @@
+.tituloTalleres {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.fondoTalleres {
+    background-color: $bg-secundario;
+    padding: 25px;
+}

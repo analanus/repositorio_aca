@@ -1,0 +1,92 @@
+@mixin max-width {
+    width: 100%;
+    max-width: 1600px;
+}
+
+header {
+    background-color: $bg-header;
+    .contenedorNav {
+        @include max-width;
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.2em;
+    }
+    .logoInicio {
+        border-radius: 300px;
+        width: 100px;
+    }
+    .contenedorRedes {
+        display: none;
+    }
+    .menu {
+        li {
+            a {
+                color: #fff !important;
+                text-shadow: 2px 2px 2px black;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 1200px;
+    margin-top: 25px;
+    background-color: $bg-footer;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .contenedorFooter {
+        @include max-width;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 25px;
+        .contenedorFormulario {
+            display: flex;
+            flex-direction: column;
+            .formulario {
+                width: 100%;
+                max-width: 800px;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+                input,
+                select,
+                textarea {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+    .contenedorMapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mapa {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+            margin: 5px 0;
+        }
+        .contenedorMailyredes {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .redesFooter {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 60px;
+                a {
+                    padding-left: 5px;
+                }
+                .redesSociales {
+                    width: 35px;
+                    padding-right: 3px;
+                }
+            }
+        }
+    }
+}

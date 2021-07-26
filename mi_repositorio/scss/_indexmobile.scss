@@ -1,0 +1,88 @@
+@mixin max-width {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.contenedorSection1 {
+    @include max-width;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    background-color: $bg-principal;
+    .textoBienvenida {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20px;
+        justify-content: center;
+        h1 {
+            display: flex;
+            padding-bottom: 20px;
+            font-family: "Open Sans", sans-serif;
+            font-size: 3.5em;
+            font-weight: 800;
+            color: #ffffff;
+            text-shadow: 2px 2px 2px black;
+        }
+        p {
+            display: flex;
+            line-height: 1.5em;
+            font-size: 1.3em;
+            font-weight: 500;
+            width: 85%;
+            color: #ffffff;
+            padding-top: 20px;
+            text-shadow: 0.5px 0.5px 0.5px black;
+        }
+    }
+    .videoDesktop {
+        display: none;
+    }
+}
+
+.contenedorSection2 {
+    @include max-width;
+    background-color: $bg-secundario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    h2 {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+.articulos {
+    padding: 20px 0;
+    @include max-width;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .contenedorArticulo {
+        height: 400px;
+        width: 300px;
+        background-color: #ffffff;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column;
+        border-radius: 16px;
+        padding-top: 20px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+        .imagenCard {
+            width: 100%;
+            height: 170px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .textoNota {
+            p {
+                width: 100%;
+                padding-top: 15px;
+                font-size: 1.1em;
+                line-height: 1.5em;
+            }
+        }
+    }
+}

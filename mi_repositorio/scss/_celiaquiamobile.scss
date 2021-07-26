@@ -1,0 +1,39 @@
+@mixin max-width {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.contenedorCeliaquia {
+    @include max-width;
+    display: flex;
+    flex-direction: column;
+    .articuloCeliaquia {
+        width: 100%;
+        background-color: $bg-secundario;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 15px;
+        width: 100%;
+        p,
+        h2 {
+            padding: 5px 10px;
+        }
+    }
+    .articuloCeliaquia2 {
+        width: 100%;
+        background-color: $bg-principal;
+        border-radius: 16px;
+        padding: 20px;
+        margin: 15px;
+        width: 100%;
+        p {
+            font-size: 1.3em;
+        }
+    }
+}
+
+.anmat {
+    display: flex;
+    flex-direction: column;
+    @include max-width;
+}

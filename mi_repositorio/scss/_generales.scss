@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tituloSeccion {
+    color: #333333;
+    padding: 20px 0 10px;
+    font-family: "Open sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.descripcionSeccion {
+    padding: 20px 0 40px;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fondoSlide {
+    background-color: rgba(172, 255, 173, 0.5);
+    border-radius: 25px;
+    .tituloSlide {
+        color: #000;
+    }
+    .textoSlide {
+        color: #000;
+    }
+}
+
+.btnColor {
+    background-color: $bg-principal;
+}
+
+.btnColor2 {
+    background-color: $bg-secundario;
+}
+
+.modalidadTaller {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.separador1 {
+    background-color: #FFF;
+    height: 8px;
+    width: 55px;
+    border-radius: 5px;
+}
+
+.separador2 {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
